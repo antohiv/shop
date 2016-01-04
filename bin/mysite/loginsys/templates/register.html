@@ -1,0 +1,12 @@
+{% include "header.html" %}
+<div id="all">
+{% block login %}
+	<form class="user_register" action="/auth/register/" method="post">
+		{% csrf_token %}
+		{{ form }}
+
+		<input class="register" type="submit" value="Register">
+	</form>
+{% endblock %}
+</div>
+{% include "footer.html" %}

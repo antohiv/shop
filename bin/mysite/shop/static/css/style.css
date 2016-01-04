@@ -1,0 +1,595 @@
+body{margin: 0 auto; font-family: verdana}
+a{
+text-decoration: none;
+color: blue;
+}
+a:hover{text-decoration: underline;}
+.header{
+	margin: 0 auto;
+	border: 1px solid #C6C6C6;
+	padding: 5px;
+	background: #c9c9c9
+}
+
+.header #all{
+    border: 0;
+    padding: 0
+}
+
+#all {
+    margin: 0px auto;
+    width: 850px;
+    border: 1px solid #d9d9d9;
+    padding: 12px;
+}
+.logo {
+    margin: 5px;
+    clear: both;
+    display: inline-block;
+}
+.logo img {
+    height: 80px;
+    width: 80px;
+    
+}
+.header #all .search_form {
+    float: right;
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 35px;
+}
+
+.header #all .search_form form {
+    background: #fff none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 10px;
+    width: 100%;
+}
+.header #all .search_form input:first-child {
+    width: 150px;
+    padding: 5px;
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+}
+
+.header #all .search_form input:last-child {
+    background: transparent url("../img/search.png") no-repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+    height: 16px;
+    margin-bottom: 0;
+    margin-right: 6px;
+    margin-top: 0;
+    text-indent: -99cm;
+    vertical-align: middle;
+    width: 16px;
+}
+::-webkit-input-placeholder {
+   color: #c9c9c9;
+   font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #c9c9c9;  
+   font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #c9c9c9; 
+   font-style: italic; 
+}
+
+:-ms-input-placeholder {  
+   color: #c9c9c9; 
+   font-style: italic; 
+}
+
+/*(((((((((((((((((((((((((  LOGIN FORM ((((((((((((((((((((((((((((((((*/
+.login {
+    float: right;
+}
+.login form {
+    margin-right: 40px;
+    padding-top: 7px;
+    width: 130px;
+}
+.login form input {
+    display: block;
+    width: 130px;
+}
+
+
+.login img {
+    display: block;
+    margin: 0 0 3px 15px;
+}
+
+.login .btn_login {
+    width: 33px;
+    float: left;
+}
+
+.login a {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+    box-shadow: 0 0 1px #555;
+    border-radius: 6px;
+    color: #000;
+    float: left;
+    font: 13px arial;
+    margin: 2px 0 0 9px;
+    padding: 3px 5px;
+}
+.login a:hover {
+    text-decoration: none
+}
+
+
+/*&&&&&&&&&&&&&&&&& PAGE LOGIN &&&&&&&&&&&&&&&&&&&&&&&*/
+form.login_form {
+    margin: 0 auto;
+    width: 230px;
+}
+
+form.login_form .error {
+    color: red;
+    display: block;
+    font: 12px verdana;
+    padding: 3px;
+}
+ label {}
+
+form.login_form input {
+    display: block;
+    margin: 0 0 12px;
+    width: 150px;
+}
+
+form.login_form .btn_login {
+    cursor: pointer;
+    display: inline-block;
+    width: 80px;
+}
+
+
+form.login_form .register {
+    color: #444;
+    font: 15px arial;
+}
+form.login_form .register:hover {
+    color: blue;
+}
+
+
+
+/*<<<<<<<<<<<<<<<<< PAGE REGISTER USER <<<<<<<<<<<<<<<<<<*/
+
+form.user_register {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.user_register label {
+    color: #333;
+    display: block;
+    font: 12px verdana;
+    margin: 5px 0 0 10px;
+}
+
+form.user_register input {
+    margin-left: 5px;
+    width: 150px;
+}
+form.user_register span {
+    display: block;
+    font: italic 12px arial;
+    margin: 15px 0 15px 10px;
+}
+form.user_register .register {
+    cursor: pointer;
+}
+
+form.user_register ul.errorlist {
+    color: red;
+    font: italic 12px tohama;
+    list-style: outside none none;
+    margin: 7px 0 0;
+    padding-left: 10px;
+}
+/*@@@@@@@@@@@@@@@@@ baner @@@@@@@@@@@@@@@@@*/
+.baners {
+    display: inline-block;
+    width: 30%;
+    border: 0px solid;
+    padding: 7px;
+    margin: 5px;
+    box-shadow: 0px 1px 9px #ccc;
+
+}
+
+.baners h3 a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+ }   
+
+img.shop_logo {
+    clear: both;
+    display: block;
+    margin: 10px auto;
+    width: 110px;
+}
+
+.phone spam {
+    color: #007fff;
+    font: bold 13px Arial;
+}
+
+.addres spam {
+    color: #333;
+    font-size: 11px;
+}
+.phone {
+    color: #060606;
+    font-size: 12px;
+}
+
+.button{
+    margin: 15px;
+    padding: 5px;
+    color: #cccccc;
+    font: 12px verdana;
+    text-align: right;
+}
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!! Detail Products !!!!!!!!!!!!!!!!!!!*/
+.shop_details {
+    margin-left: 40px;
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.shop_details h2 {
+    color: #444;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.shop_details img {
+    margin: 0;
+}
+
+.store_details {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.store_details ul {
+    list-style: outside none none;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.store_details ul li {
+    color: #555;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+.store_details ul li span {
+    color: blue
+}
+.title {
+    font: 1.5em tohama;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.details {
+   margin: 25px; 
+}  
+ 
+.details dt a {
+    font-weight: bold
+  }
+
+.details dd {
+    border: 1px solid #ccc;
+    display: none;
+    margin: 10px 0 0 15px;
+    padding: 10px;
+    width: 300px;
+}
+
+.details dd p {
+    color: #444;
+    font: 12px italic tohama;
+}
+
+.details dd p spam {
+    color: blue;
+    font: italic 15px arial important;
+    text-decoration: underline;
+}
+
+
+
+.arrow-up {
+    border-bottom: 8px solid #ccc;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    height: 0;
+    position: relative;
+    top: -36px;
+    width: 0;
+}
+
+/*%%%%%%%%%%%%%%%%%%% PAGE "LIST MAGAZIN" %%%%%%%%%%%%%%%%%%%%%%%5*/
+
+ul.list_magazins h4 {
+    margin-left: 15px;
+    width: 130px;
+}
+
+ul.list_magazins h4 a {
+    display: block;
+    text-align: center;
+}
+
+ul.list_magazins p {
+    font: 13px Arial;
+    margin: 0 15px;
+}
+.list_magazins li {
+    color: #444;
+    font: 12px tohama;
+    margin: 5px 0 12px 15px;
+}
+
+
+
+/*&&&&&&&&&&&&&&&&&&&&&&& PAGE "SEARCH RESULT" &&&&&&&&&&&&&&&&&&&&&&&&*/
+ul.search_result {
+    width: 100px;
+    list-style: none
+
+}
+ul.search_result li {
+    margin-bottom: 30px
+}
+ul.search_result li a {
+    display: block;
+    text-align: center
+}
+
+ul.search_result li a img {
+    margin-top: 5px;
+    width: 90px;
+}
+
+/* (((((((((((((((((((( USER LOGIN/LOGOUT )))))))))))))))))))) */
+.header .login p {
+    color: #333;
+    font: bold 13px arial;
+    margin: 5px;
+}
+.header .login spam {
+    background: green none repeat scroll 0 0;
+    border: 1px solid #9db23a;
+    border-radius: 100%;
+    margin-top: 4px; 
+    float: left;
+    height: 5px;
+    margin-right: 4px;
+    width: 5px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9dd53a+0,a1d54f+50,80c217+51,7cbc0a+100;Green+Gloss+%231 */
+    background: #9dd53a; /* Old browsers */
+    background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
+}
+
+.header .login spam{
+    0% {background-color: blue}
+    50% {background-color: black}
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@ Page my_account @@@@@@@@@@@@@@@@@@@@@@ */
+.store h3 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+.store {
+    border-right: 1px solid;
+    display: inline-block;
+    padding: 10px;
+    width: 47%;
+}
+.store .btn_add {
+    float: right;
+    font: bold 12px arial;
+    margin-bottom: 16px;
+}
+.store ul.my_list_magazins {
+    padding-left: 10px;
+    clear: both;
+}
+
+.store ul.my_list_magazins h4 {
+    width: 120px;
+    text-align: center;
+}
+
+.store ul.my_list_magazins p {
+    color: #555;
+    font: 12px verdana;
+}
+.store ul.my_list_magazins p spam {
+    color: blue;
+}
+
+.store .no_items {
+    clear: both;
+    color: #c1c1c1;
+    font: italic 20px verdana;
+    text-align: center;
+}
+
+
+
+.products{
+    float: right;
+    width: 47%;
+    padding: 10px;
+}
+.products ul.list_magazins {
+    padding-left: 10px;
+    clear: both;
+}
+
+.products h3 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.products .btn_add {
+    float: right;
+    font: bold 12px arial;
+    margin-bottom: 16px;
+}
+
+
+.products .no_items {
+    clear: both;
+    color: #c1c1c1;
+    font: italic 20px verdana;
+    text-align: center;
+}
+
+
+
+/*     BUTNONS "DELETE/EDIT"     */
+
+.butons {
+    display: block;
+    padding: 15px 0;
+}
+.butons .btn {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%) repeat scroll 0 0;
+    border-radius: 3px;
+    box-shadow: 0 0 1px #555;
+    color: #111;
+    font: 12px arial;
+    margin: 3px;
+    padding: 3px 5px;
+}
+.butons .delete:hover {
+    text-decoration: none;
+    color: red;
+
+}
+.butons .edit:hover {
+    text-decoration: none;
+    color: blue;
+
+}
+.butons .btn img {
+    height: 15px;
+    margin-right: 1px;
+    vertical-align: middle;
+    width: 12px;
+}
+
+.btn_products {
+    padding: 10px 0 15px;
+}
+
+
+/*))))))))))))))))))))))) PAGINATION ))))))))))))))))))))))*/
+.paginations {
+
+}
+
+ul.pagination {
+    list-style: none;
+    text-align: center;
+}
+
+ul.pagination li {
+    display: inline-block;
+    
+}
+ul.pagination li a {
+    color: #555;
+    font: 12px arial;
+    padding: 5px;
+}
+ul.pagination li a:hover {
+    text-decoration: none;
+    background: #ccc
+}
+
+.curent a {
+    background: #555;
+    color: #fff !important;
+    padding: 3px
+}
+.curent a:hover {
+    background: #555 !important;
+    cursor: default;
+}
+
+.unavailable a{
+    cursor:default;
+ 
+}
+.unavailable a:hover {
+    background: none !important
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~ PAGIN FORMS ~~~~~~~~~~~~~~~~~~~~~~*/
+#all form {
+    margin: 0 auto;
+    width: 40%;
+}
+
+#all form label {
+    display: block;
+    font-size: 13px;
+    margin: 0 auto;
+    padding: 2px;
+}
+#all form input {
+    margin-bottom: 15px;
+    padding: 3px;
+}
+#all form #id_items_store_item_is_placed {
+    margin-bottom: 15px;
+    display: block;
+}
+#all 
+#all form .btn_add {
+    cursor: pointer;
+    display: block;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$ FOOTER $$$$$$$$$$$$$$$$$$$$*/
+.footer {
+    background: #717a71;
+    font: 12px tohama;
+    padding: 5px;
+    color: #fff;
+    text-align: center
+}
+

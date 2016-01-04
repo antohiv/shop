@@ -1,0 +1,61 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Magazin </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="{% static "js/java.js" %}"></script>
+
+	
+</head>
+<body>
+	
+	{% include "header.html" %}
+	<div id="all">
+		<div class="shop_details">
+			<h2>{{ store.store_name }}</h2>
+			<img src="{% static "img/images.jpeg" %}" >
+			
+		</div>
+		<div class="store_details">
+			<ul >
+				<li>Address: <span>{{ store.store_address }}</span></li>
+				<li>Phone: <span> {{ store.store_phone }}</span></li>
+				<li>Mobile Phone: <span> {{ store.store_mobile_phone }}</span></li>
+				<li>Store Number: <span>{{ store.store_number_of_items_in_store }}</span></li>
+			</ul>
+		</div>
+		<hr>
+		<h3 class="title">Products:</h3>
+
+			
+			{% for product in products %}
+				<!--<p id="flip"><a  href="#">{{ product.items_name }}</a></p>
+				<div class="products_details">
+					<p>Made in: {{ product.items_manufactured }}</p>
+					<p>Price: {{ product.items_price }}</p>
+					<p>User add: {{ product.items_user_add }}</p>
+					<p>Store Placed: {{ product.items_store_item_is_placed }}</p>
+				</div>-->
+
+
+
+		<dl class="details">
+
+		<dt><a href="">{{ product.items_name }}</a></dt>
+		<dd>
+			<spam class="arrow-up"></spam>
+			<p>Made in: <spam>{{ product.items_manufactured }}</spam></p>
+			<p>Price: <spam>{{ product.items_price }}$</spam></p>
+			<p>User add: <spam>{{ product.items_user_add }}</spam></p>
+			<p>Store Placed: <spam>{{ product.items_store_item_is_placed }}</spam></p>
+		</dd>
+
+		</dl>
+		<hr>
+	{% endfor %}
+
+</div>
+{% include "footer.html" %}
+</body>
+</html>

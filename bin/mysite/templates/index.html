@@ -1,0 +1,26 @@
+{% load staticfiles %}
+	{% include "header.html" %}
+<div id="all">
+
+	
+	{% if stores %}
+			
+			{% for store in stores %}
+	<div class="baners">
+			<h3><a href="/stores/{{ store.id }}">{{ store.store_name }}<img class="shop_logo" src="{% static "img/images.jpeg" %}" ></a></h3>
+
+			<p class="addres"><spam>str.{{ store.store_address }}</spam></p>
+			<p class="phone">Phone: <spam>{{ store.store_phone }}</spam></p>
+
+			
+	</div>
+			{% endfor %}
+			
+		{% else %}
+			<p> Noo store </p>
+		{% endif %}
+		<div class="button">
+			<a class="btn btn-sm btn-default" role="button" href="stores/all"> All Magazin </a>
+		</div>
+	</div>	
+	{% include "footer.html" %}

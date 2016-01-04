@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<html>
+  <head>
+      <title>Store Search</title>
+  </head>
+  <body>
+    {% include "header.html" %}
+    <div id="all">
+      <p>You searched for: <strong><em>{{ query }}</em></strong></p>
+   
+      {% if store %}
+          <p>Found {{ store|length }} store{{ store|pluralize }}.</p>
+          <ul class="search_result">
+              {% for store in store %}
+              <li><a href="/stores/{{ store.id }}/">{{ store.store_name }}<img class="shop_logo" src="{% static "img/images.jpeg" %}" ></a></li>
+              {{ store.store_address}}
+              {% endfor %}
+          </ul>
+
+         
+      {% else %}
+          <p>No items matched your search criteria.</p>
+      {% endif %}
+    </div>
+ {% include "footer.html" %}
+  </body>
+</html>

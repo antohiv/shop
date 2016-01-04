@@ -1,0 +1,19 @@
+{% include "header.html" %}
+<div id="all">
+{% block login %}
+	<form class="login_form" action="/auth/login/" method="post">
+		{% csrf_token %}
+		<labe for="username">Login</label>
+		<input type="text" name="username" >
+		<labe for="password">Password</label>
+		<input type="password" name="password">
+		{% if login_error %}
+			<label class="error">{{ login_error }}</label>
+		{% endif %}
+		<input class="btn_login" type="submit" value="Login">
+
+        <a class="register" href="/auth/register/">Register</a>
+	</form>
+{% endblock %}
+</div>
+{% include "footer.html" %}

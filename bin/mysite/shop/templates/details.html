@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Magazin </title>
+</head>
+<body>
+	{% if stores %}
+		<ul style = "list-style:none">
+		{% for store in stores %}
+		<h4><a href="/stores/{{ store.id }}">{{ store.store_name }}</a></h4>
+		<p>str.{{ store.store_address }}</p>
+		<hr>
+		{% endfor %}
+		</ul>
+	{% else %}
+		<p> Noo store </p>
+	{% endif %}	
+	<!--
+	<p>Products</p>
+	{% for product in products %}
+		<p>{{ product.items_name }}</p>
+		<p>{{ product.items_price }}</p>
+		<hr>
+	{% endfor %}
+-->
+{% include "footer.html" %}
+</body>
+</html>

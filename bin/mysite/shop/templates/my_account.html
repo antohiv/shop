@@ -1,0 +1,54 @@
+{% load staticfiles %}
+{% include "header.html" %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{% static "js/java.js" %}"></script>
+
+<div id="all">
+	<div class="store">
+		<h3>Magazins</h3>
+		<a class="btn_add" title="Add new magazin" href="/store/add/{{ user_id }}"> Add </a>
+		{% if store %}
+		
+			<ul class="my_list_magazins" style = "list-style:none">
+			{% for store in store %}
+				<li><h4><a href="/stores/{{ store.id }}">{{ store.store_name }}<img class="shop_logo" src="{% static "img/images.jpeg" %}" ></a></h4>
+				<p>Phone:<spam> {{ store.store_phone }}</spam></p>
+				<p>str.{{ store.store_address }}</p></li>
+				<div class="butons">
+					<a class="btn delete" href="/delete/{{ store.id }}"><img src="{% static "img/delete.png" %}" > Delete </a>
+					<a class="btn edit" href="/update/{{ store.id }}"><img src="{% static "img/edit.png" %}" > Edit </a>
+				</div>
+
+
+			{% endfor %}
+			</ul>
+			
+			{% else %}
+				<p class="no_items"> No store </p>
+		{% endif %}	
+	</div>
+	
+	<div class="products">
+		<h3>Products</h3>
+		<a class="btn_add" title="Add new magazin" href="/products/add/{{ user_id }}"> Add </a>
+		{% if products %}
+		
+			<ul class="list_magazins" style = "list-style:none">
+			{% for product in products %}
+			<p><a href="">{{ product.items_name }}</a></p>
+			<li>Made in: <spam>{{ product.items_manufactured }}</spam></li>
+				<li>Price: <spam>{{ product.items_price }}$</spam></li>
+				<li>User add: <spam>{{ product.items_user_add }}</spam></li>
+				<li>Store Placed: <spam>{{ product.items_store_item_is_placed }}</spam></li>
+			<div class="butons">
+				<a class="btn delete" href="/delete/items/{{ product.id }}"><img src="{% static "img/delete.png" %}" > Delete </a>
+				<a class="btn edit" href="/update/items/{{ product.id }}"><img src="{% static "img/edit.png" %}" > Edit </a>
+			</div>
+			{% endfor %}
+			</ul>
+			{% else %}
+				<p class="no_items"> No products </p>
+		{% endif %}	
+	</div>
+</div>
+{% include "footer.html" %}

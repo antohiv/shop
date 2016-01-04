@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+    <!-- Latest compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+
+    <title>First App</title>
+  </head>
+  <body>
+    
+      <div class="header">
+        <div id="all">
+          <a class="logo" href="/"> <img src="{% static "img/logo.png" %}" > </a>
+         
+          <div class="login">
+            {% if username %}
+
+                <p><img src="{% static "img/user.png" %}" > <spam></spam> Hi, {{ username }}!  </p>
+                <a href="/user/{{ user_id }}/"> My account </a>
+                <a href="/auth/logout/"> Logout </a>
+
+            {% else %}
+            <p><img src="{% static "img/login_user.png" %}" ></p>
+                <a class="btn_login" href="/auth/login/"> Login </a>
+            {% endif %}
+            {% block login %} {% endblock %}
+          </div>
+        
+          {% include "search_form.html" %}
+        </div>
+      	
+      </div>

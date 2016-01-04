@@ -1,0 +1,9 @@
+{% include "header.html" %}
+<div id="all">
+    <form action="/store/addstore/" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input class="btn_add" type="submit" value="Add">
+    </form>
+</div>
+{% include "footer.html" %}
